@@ -1,0 +1,29 @@
+body {
+  font-family: sans-serif;
+}
+
+blockquote {
+  font-size: 2em;
+  font-family: serif;
+  font-style: italic;
+}
+
+blockquote cite {
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6, blockquote, cite, p {
+  outline: 1px solid #ae0068;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  outline-color: #FF9900;
+}
+
+p {
+  outline-color: green;
+}
+
+blockquote {
+  outline-color: red;
+}
