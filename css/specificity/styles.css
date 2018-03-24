@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+body {
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #333;
+  font-size: 18px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+p {
+  color: LIGHTSEAGREEN;
+}
+
+blockquote {
+  background: #eee;
+  padding: 30px 40px;
+}
+
+blockquote p {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 40px;
+  margin: 0;
+  color: black;
+}
