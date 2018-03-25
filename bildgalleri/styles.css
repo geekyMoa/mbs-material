@@ -1,0 +1,99 @@
+html, body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.nav,
+.nav a {
+  background-color: CADETBLUE;
+  color: white;
+}
+
+.nav-list,
+.dropdown {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list-item {
+  position: relative;
+}
+
+.nav-list-item a,
+.dropdown-item a {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+.nav-list-item a:hover,
+.dropdown-item a:hover {
+  background-color: STEELBLUE;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: PALETURQUOISE;
+  color: black;
+}
+
+
+
+
+
+
+
+.image-gallery {
+  background-color: black;
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.image-gallery--image {
+  cursor: pointer;
+}
+
+#modal.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,.3);
+}
+
+#modal.active #modal-image {
+  max-width: 80%;
+}
+
+.close:after {
+  content: 'x';
+  font-size: 40px;
+  color: white;
+}
