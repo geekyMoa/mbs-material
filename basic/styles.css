@@ -1,29 +1,53 @@
+html, body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: sans-serif;
 }
 
-blockquote {
-  font-size: 2em;
-  font-family: serif;
-  font-style: italic;
+img {
+  max-width: 100%;
 }
 
-blockquote cite {
-  font-style: normal;
+.container {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5, h6, blockquote, cite, p {
-  outline: 1px solid #ae0068;
+.image-gallery {
+  background-color: black;
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  outline-color: #FF9900;
+.image-gallery--image {
+  cursor: pointer;
 }
 
-p {
-  outline-color: green;
+#modal.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,.3);
 }
 
-blockquote {
-  outline-color: red;
+#modal.active #modal-image {
+  max-width: 80%;
+}
+
+.close:after {
+  content: 'x';
+  font-size: 40px;
+  color: white;
 }
